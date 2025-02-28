@@ -1,0 +1,63 @@
+@font-face {
+  font-family: Orbitron;
+  src: url(../fonts/Orbitron-VariableFont_wght.ttf);
+}
+
+@font-face {
+  font-family: SevenSegments;
+  src: url(../fonts/Segment7Standard.otf);
+}
+
+h1 {
+  color: #369;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 250%;
+}
+
+main {
+  padding: 8px;
+  width: 306px;
+  height: 393px;
+  border: 1px solid black;
+  border-radius: 8px;
+  background-color: lightgrey;
+}
+
+.display {
+  margin: 5px auto;
+  padding: 5px;
+  width: 290px;
+  font-size: 26px;
+  font-family: SevenSegments;
+  background-color: #eee;
+  text-align: right;
+  border: 2px solid black;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px 0px;
+  align-items: center;
+  padding: 5px 0;
+  justify-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+button {
+  width: 60px;
+  height: 60px;
+  font-size: 20px;
+  border-radius: 8px;
+  font-family: Orbitron;
+  font-weight: bold;
+}
+button:nth-of-type(1) {
+  color: red;
+}
+button:nth-of-type(2),
+button:nth-of-type(3),
+button:nth-of-type(4) {
+  visibility: hidden;
+}
