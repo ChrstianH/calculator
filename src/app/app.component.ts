@@ -56,7 +56,7 @@ export class AppComponent {
         }
         const value = Number(key);
         this.displayContent =
-          this.displayContent > 0
+          this.displayContent >= 0
             ? 10 * this.displayContent + value
             : 10 * this.displayContent - value;
         this.calcFinished = false;
