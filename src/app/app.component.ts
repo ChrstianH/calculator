@@ -55,7 +55,10 @@ export class AppComponent {
           this.displayContent = 0;
         }
         const value = Number(key);
-        this.displayContent = 10 * this.displayContent + value;
+        this.displayContent =
+          this.displayContent > 0
+            ? 10 * this.displayContent + value
+            : 10 * this.displayContent - value;
         this.calcFinished = false;
     }
   };
